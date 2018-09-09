@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Customer Login Form</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="login.css">
+<body>
+<h1>Customer Login Form</h1>
+
+<form action="CustLogin" method="post">
+
+  <div class="container">
+    <label for="uname"><b>Phone number</b></label>
+    <input type="text" placeholder="Enter Phone number" name="custname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="text" placeholder="Enter Password" name="custpassword" required>
+
+    <button type="submit" name="submit" >Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+	
+  <div class="container" style="background-color:#f1f1f1">
+  
+    <button type="button" class="cancelbtn" onclick="window.location='index.jsp'">Cancel</button>
+    <span class="psw"> <a href="#"> Forgot password?</a></span>
+  </div>
+</form>
+</body>
+</html>
